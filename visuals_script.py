@@ -128,7 +128,7 @@ def feature_plot(importances, X_train, y_train):
 
     # Creat the plot
     fig = pl.figure(figsize = (15,10))
-    pl.title("Normalized Weights for First five Most Predictive Features", fontsize = 16)
+    pl.title("Normalized Weights for First five Most Predictive Features", fontsize = 22)
     pl.bar(np.arange(5), values, width = 0.6, align="center", color = '#00A000', \
           label = "Feature Weight")
     pl.bar(np.arange(5) - 0.3, np.cumsum(values), width = 0.2, align = "center", color = '#00A0A0', \
